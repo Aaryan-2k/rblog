@@ -15,8 +15,6 @@ export default function Pagination(){
             }
             <span>Page {pagenumber} of {totalpages} Pages</span>
             </div>
-
-
         </div>
     )
 }

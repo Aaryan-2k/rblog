@@ -1,17 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header'
-import Blogs from './components/Blogs'
-import Pagination from './components/Pagination';
+import { Route,Routes } from 'react-router-dom';
+import Home from './pages/Home'
+import Category from './pages/Category'
 function App() {
   return (
-    <div>
-    <Header></Header>
-  <div className='container'>
-    <Blogs/>
-  </div>
-    <Pagination></Pagination>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/category/:categoryid' element={<Category/>}></Route>
+    </Routes>
+
   );
 }
 
