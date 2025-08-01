@@ -8,6 +8,7 @@ export default function Blogs(){
     //Ltes Say i want to use isLoadint and Posts data here lets see how to consume it using context API
 
     const {isLoading,fetchData,posts}=useContext(AppContext);
+    console.log(`blogs======${posts}`)
     return (<div>
         {
             isLoading ? (<div><div className='loader'></div></div>)
